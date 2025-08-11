@@ -1,0 +1,12 @@
+Player
+-> id
+-> name
+
+Board
+-> status : completed, ongoing
+-> getWinner
+-> makeMove
+
+Game
+-> intialize Board
+-> registerPlayer
