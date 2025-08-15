@@ -1,0 +1,66 @@
+parkingSpot
+-> id
+-> level
+-> size (car / bike / truck) abstract -> extended
+-> occupied / unoccupied
+-> price per hour
+
+entrance
+-> name
+
+exit
+-> name
+
+display board
+-> available spots (car / bike / truck)
+
+Vehicle (abstract)
+-> id
+-> type (car, bike, truck)
+
+parkingTicket
+-> id
+-> vechicle
+-> spot
+-> timeAlloted
+
+parkingLot
+-> name
+-> entrances
+-> exits
+-> global display board
+-> parkingSpots
+
+account
+-> name
+-> email
+-> password
+
+admin
+-> account
+-> parkingLot
+# add / remove entrances and exits
+
+ParkingAttendant
+-> account
+# create Parking tickets
+
+Payments
+-> different Methods
+
+
+##Service
+
+ParkingSpotService
+-> Create parking spot
+
+displayService
+-> update available spot
+
+Payment Service(abstract)
+-> card extended
+-> cash extended
+
+Parking Service
+-> entry
+-> exitx
